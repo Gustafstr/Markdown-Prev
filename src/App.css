@@ -1,0 +1,81 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centrerar barn element vertikalt */
+  margin: 20px;
+  background-color: black;
+}
+
+.editor-container,
+.previewer-container {
+  background: rgba(137, 43, 226, 0.55);
+  /* Vit bakgrund */
+  margin-bottom: 20px;
+  /* Mellanrum mellan rutor */
+  border: 1px solid #000000;
+  /* Ram runt rutor */
+  border-radius: 4px;
+  /* Rundade hörn */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Skugga för djup */
+  width: 80%;
+  /* Bredden på rutor som en procentandel av föräldern */
+  max-width: 800px;
+  /* Maxbredd på rutor */
+}
+
+.editor-header,
+.previewer-header {
+  padding: 10px;
+  background: rgba(137, 43, 226, 0.55);
+  /* Ljusgrå bakgrund för rubriken */
+  border-bottom: 1px solid black;
+  /* Linje under rubriken */
+  border-top-left-radius: 4px;
+  /* Rundade hörn på rubriken */
+  border-top-right-radius: 4px;
+  /* Rundade hörn på rubriken */
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  /* Storlek på rubriktext */
+}
+
+#editor,
+#preview {
+  padding: 15px;
+  /* Padding inuti rutan */
+  font-family: "Courier New", monospace;
+  line-height: 1.5;
+  /* Radavstånd */
+  height: auto;
+  /* Höjd baserat på innehåll */
+  min-height: 200px;
+  /* Minsta höjd på rutor */
+  width: 100%;
+  /* Bredden på innehållet i rutor */
+  box-sizing: border-box;
+  /* Inkluderar padding i bredden */
+  resize: vertical;
+  /* Tillåter endast vertikal storleksändring */
+  overflow-y: auto;
+  /* Lägger till scroll om innehållet överskrider rutan */
+}
+
+/* Stilar för editor */
+#editor {
+  background: rgba(137, 43, 226, 0.55);
+  /* Ljusare bakgrund för editor */
+  border-bottom-left-radius: 4px;
+  /* Rundade hörn på botten */
+  border-bottom-right-radius: 4px;
+  /* Rundade hörn på botten */
+}
+
+/* Stilar för preview */
+#preview {
+  background: rgba(137, 43, 226, 0.55);
+  /* Ljusare bakgrund för preview */
+  border-radius: 4px;
+  /* Rundade hörn runt om */
+}
